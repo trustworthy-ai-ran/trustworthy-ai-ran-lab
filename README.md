@@ -49,15 +49,6 @@ Scope note: findings apply to the E2SM-KPM measurements exposed end-to-end by th
 
 ---
 
-## Roadmap
-
-1. **Observability atlas** — a systematic fault-class × E2-visibility matrix, including delay-class KPM measurements where implemented
-2. **Agent trials** — pre-registered naive vs. disciplined agent protocol on the same trap
-3. **Extension to NTN** — the same sufficiency questions over GEO/LEO link dynamics
-
-## Contact
-
-Semantic Communication Ltd. · North Vancouver, BC, Canada.
-Raw data and full technical report (TR-2026-01) available on request; replication welcome.
+#
 
 *Content licensed CC BY 4.0 — reuse with attribution.*
