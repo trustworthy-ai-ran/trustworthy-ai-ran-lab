@@ -35,10 +35,51 @@ p95 of the two valid runs agree within 3%.
 - A digital twin fed by the same telemetry inherits the blindness and validates the disaster as safe.
 - Latency tools exist (TWAMP, QoS monitoring) — but nothing in the loop knows *when* to invoke them; the trigger itself depends on the blind feed.
 - The observability gap is implementation-independent evidence for DU-local intelligence (the **dApp** direction — Lacava et al., *Computer Networks* 269, 2025, [doi:10.1016/j.comnet.2025.111342](https://doi.org/10.1016/j.comnet.2025.111342)): their case is *access*; this experiment adds *sufficiency*.
+## EXP-02B — silent, order-dependent loss of Indications
+
+Answering the obvious objection to UC-06 — *"why not just subscribe to a delay
+metric?"* — surfaced a second effect: adding `DRB.RlcSduDelayDl` to a working
+subscription took it from 22 Indications to **zero**, silently, with HTTP 200
+and a Subscription ID returned throughout.
+
+That became its own pre-registered experiment.
+
+| Run | Metric list (Report Style 2) | Predicted | Observed |
+|---|---|---|---|
+| P  | `DRB.UEThpDl` | > 0 | **24** |
+| A1 | `DRB.UEThpDl, DRB.RlcSduDelayDl` | 0 | **0** |
+| B  | `DRB.RlcSduDelayDl, DRB.UEThpDl` | > 0 | **24** |
+| A2 | `DRB.UEThpDl, DRB.RlcSduDelayDl` | 0 | **0** |
+| C  | `DRB.UEThpDl, DRB.FakeMetric123` | 0 (diagnostic) | **0** |
+
+**Same two metrics — reversing their order restores the stream, reversing it
+back kills it again.** Whether an Indication is emitted at all is decided
+solely by the *last* metric in the subscription: the readiness check in
+`e2sm_kpm_report_service_style2::collect_measurements` reads a loop-scoped
+buffer that only ever holds the last metric's result. If that one yields no
+value, the entire Indication is discarded — including metrics already
+collected successfully.
+
+Pre-registration, locked analysis rule, mechanism and threats to validity:
+[`exp-02b/RESULTS.md`](exp-02b/RESULTS.md)
+
+## Open questions
+
+Four anomalies observed during these sessions are published with **no causal
+claims attached**, because they are not explained:
+[`OPEN_QUESTIONS.md`](OPEN_QUESTIONS.md)
+
+## Reproducing the figures
+
+```bash
+sudo apt install -y python3-matplotlib
+python3 tools/make_figures.py \
+    --kpm  uc06-blind-judge/data/run1_kpm.log \
+    --ping uc06-blind-judge/data/run2_ping.txt \
+    --outdir uc06-blind-judge/figures
 
 **Repository contents.**
 
-```
 uc06-blind-judge/
 ├── METHOD.md      pre-registered protocol, testbed details, reproducibility notes
 ├── figures/       five publication figures (lab, architecture, data-flow, result, proof)
