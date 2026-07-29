@@ -41,7 +41,7 @@ p95 of the two valid runs agree within 3%.
 ```
 uc06-blind-judge/
 ├── METHOD.md      pre-registered protocol, testbed details, reproducibility notes
-├── figures/       four publication figures (lab, architecture, result, proof)
+├── figures/       five publication figures (lab, architecture, data-flow, result, proof)
 └── data/          raw timestamped probe log (Run 2) and the full KPM Indication log
 ```
 
