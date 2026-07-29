@@ -31,7 +31,7 @@ Each run: **60 s idle → 120 s saturating DL UDP (iperf3 `-u -b 30M -t 120 -R`)
 | 2 | Valid | 372 samples; p50 42.8 ms, p95 2,189 ms, max 2,956 ms. Data: `data/run2_ping.txt`, `data/run1_kpm.log` (xApp session covering the run) |
 | 3 | Valid | 435 samples; p50 39.9 ms, p95 2,125 ms, max 2,637 ms; full 120 s iperf accounting: 30.0 Mb/s offered, 23.3 Mb/s delivered, ~21% datagram loss, jitter 0.5–1.7 ms |
 
-Time alignment: KPM `CollectStartTime` is native UTC; probe timestamps are epoch (`-D`), converted to UTC. During 05:29:31–46 UTC, KPM reported a constant 59,043 while the probe recorded 2,055–2,519 ms.
+Time alignment: KPM `CollectStartTime` is native UTC; probe timestamps are epoch (`-D`), converted to UTC. During 05:29:31–46 UTC the KPM stream alternated 59,043 with empty reporting windows on its fixed ~2.5 s cadence — 23 of 24 valued reports in the load window carried 59,043 — while the probe recorded 2,055–2,519 ms.
 
 Note on the raw KPM stream: values alternate 0.0 / 59,043 on adjacent reporting windows (a windowing artifact of the reporting pipeline); filtering zero-valued windows, the signal is constant. The reported unit is treated as an opaque healthy-state indicator (RLC-level accounting plausibly differs from application goodput); the claim rests on its *constancy*, not its absolute value.
 
