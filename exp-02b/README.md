@@ -6,7 +6,7 @@ When the last metric in the subscription produces no record, the Indication
 is silently withheld — including the records already collected for earlier
 metrics — with nothing logged at any level.
 
-**Upstream issue:** PASTE_YOUR_GITLAB_ISSUE_URL_HERE
+**Upstream issue:** https://gitlab.com/ocudu/ocudu/-/work_items/684)
 
 ## Result
 
