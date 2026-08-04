@@ -1,0 +1,12 @@
+EXP-02B environment
+
+srsRAN Project commit: d2f4b70dda8e2c557d5b05a0ac5f92dbddda19bc
+srsRAN Project date:   2025-11-11 12:20:49 +0000
+Compiler:              gcc (Ubuntu 11.4.0-1ubuntu1~22.04.3) 11.4.0
+CMAKE_BUILD_TYPE:      Release
+OS:                    Ubuntu 22.04.5 LTS
+Kernel:                6.8.0-124-generic
+
+RIC:   O-RAN SC Near-RT RIC, i-release (containerized)
+Core:  free5GC with gtp5g
+RF:    srsUE over ZMQ, 5G SA

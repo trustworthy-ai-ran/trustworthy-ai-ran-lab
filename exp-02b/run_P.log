@@ -1,0 +1,174 @@
+1785196799306 7/RMR [INFO] ric message routing library on SI95 p=4562 mv=3 flg=00 id=a (f447e29 4.9.4 built: Dec 13 2023)
+Subscribe to E2 node ID: gnbd_208_093_00019b_0, RAN func: e2sm_kpm, Report Style: 2, UE_id: 0, metrics: ['DRB.UEThpDl']
+Successfully subscribed with Subscription ID:  3H6mH1JphBZ2swUNxxzlLUJkCgH
+10.0.2.13 - - [28/Jul/2026 00:00:00] "POST /ric/v1/subscriptions/response HTTP/1.1" 200 -
+Received Subscription ID to E2EventInstanceId mapping: 3H6mH1JphBZ2swUNxxzlLUJkCgH -> 14
+{'response': 'OK', 'status': 200, 'payload': '{}', 'ctype': 'application/json', 'attachment': None, 'mode': 'plain'}
+
+RIC Indication Received from gnbd_208_093_00019b_0 for Subscription ID: 14, KPM Report Style: 2, UE ID: 0
+E2SM_KPM RIC Indication Content:
+-ColletStartTime:  2026-07-28 00:00:02
+-Measurements Data:
+-granulPeriod: 1000
+--Metric: DRB.UEThpDl, Value: [0.0]
+
+RIC Indication Received from gnbd_208_093_00019b_0 for Subscription ID: 14, KPM Report Style: 2, UE ID: 0
+E2SM_KPM RIC Indication Content:
+-ColletStartTime:  2026-07-28 00:00:05
+-Measurements Data:
+-granulPeriod: 1000
+--Metric: DRB.UEThpDl, Value: [0.0]
+
+RIC Indication Received from gnbd_208_093_00019b_0 for Subscription ID: 14, KPM Report Style: 2, UE ID: 0
+E2SM_KPM RIC Indication Content:
+-ColletStartTime:  2026-07-28 00:00:07
+-Measurements Data:
+-granulPeriod: 1000
+--Metric: DRB.UEThpDl, Value: [0.0]
+
+RIC Indication Received from gnbd_208_093_00019b_0 for Subscription ID: 14, KPM Report Style: 2, UE ID: 0
+E2SM_KPM RIC Indication Content:
+-ColletStartTime:  2026-07-28 00:00:10
+-Measurements Data:
+-granulPeriod: 1000
+--Metric: DRB.UEThpDl, Value: [0.0]
+
+RIC Indication Received from gnbd_208_093_00019b_0 for Subscription ID: 14, KPM Report Style: 2, UE ID: 0
+E2SM_KPM RIC Indication Content:
+-ColletStartTime:  2026-07-28 00:00:13
+-Measurements Data:
+-granulPeriod: 1000
+--Metric: DRB.UEThpDl, Value: [0.0]
+
+RIC Indication Received from gnbd_208_093_00019b_0 for Subscription ID: 14, KPM Report Style: 2, UE ID: 0
+E2SM_KPM RIC Indication Content:
+-ColletStartTime:  2026-07-28 00:00:16
+-Measurements Data:
+-granulPeriod: 1000
+--Metric: DRB.UEThpDl, Value: [0.0]
+
+RIC Indication Received from gnbd_208_093_00019b_0 for Subscription ID: 14, KPM Report Style: 2, UE ID: 0
+E2SM_KPM RIC Indication Content:
+-ColletStartTime:  2026-07-28 00:00:18
+-Measurements Data:
+-granulPeriod: 1000
+--Metric: DRB.UEThpDl, Value: [0.0]
+
+RIC Indication Received from gnbd_208_093_00019b_0 for Subscription ID: 14, KPM Report Style: 2, UE ID: 0
+E2SM_KPM RIC Indication Content:
+-ColletStartTime:  2026-07-28 00:00:21
+-Measurements Data:
+-granulPeriod: 1000
+--Metric: DRB.UEThpDl, Value: [0.0]
+
+RIC Indication Received from gnbd_208_093_00019b_0 for Subscription ID: 14, KPM Report Style: 2, UE ID: 0
+E2SM_KPM RIC Indication Content:
+-ColletStartTime:  2026-07-28 00:00:23
+-Measurements Data:
+-granulPeriod: 1000
+--Metric: DRB.UEThpDl, Value: [0.0]
+
+RIC Indication Received from gnbd_208_093_00019b_0 for Subscription ID: 14, KPM Report Style: 2, UE ID: 0
+E2SM_KPM RIC Indication Content:
+-ColletStartTime:  2026-07-28 00:00:26
+-Measurements Data:
+-granulPeriod: 1000
+--Metric: DRB.UEThpDl, Value: [0.0]
+
+RIC Indication Received from gnbd_208_093_00019b_0 for Subscription ID: 14, KPM Report Style: 2, UE ID: 0
+E2SM_KPM RIC Indication Content:
+-ColletStartTime:  2026-07-28 00:00:28
+-Measurements Data:
+-granulPeriod: 1000
+--Metric: DRB.UEThpDl, Value: [0.0]
+
+RIC Indication Received from gnbd_208_093_00019b_0 for Subscription ID: 14, KPM Report Style: 2, UE ID: 0
+E2SM_KPM RIC Indication Content:
+-ColletStartTime:  2026-07-28 00:00:31
+-Measurements Data:
+-granulPeriod: 1000
+--Metric: DRB.UEThpDl, Value: [0.0]
+
+RIC Indication Received from gnbd_208_093_00019b_0 for Subscription ID: 14, KPM Report Style: 2, UE ID: 0
+E2SM_KPM RIC Indication Content:
+-ColletStartTime:  2026-07-28 00:00:34
+-Measurements Data:
+-granulPeriod: 1000
+--Metric: DRB.UEThpDl, Value: [0.0]
+
+RIC Indication Received from gnbd_208_093_00019b_0 for Subscription ID: 14, KPM Report Style: 2, UE ID: 0
+E2SM_KPM RIC Indication Content:
+-ColletStartTime:  2026-07-28 00:00:36
+-Measurements Data:
+-granulPeriod: 1000
+--Metric: DRB.UEThpDl, Value: [0.0]
+
+RIC Indication Received from gnbd_208_093_00019b_0 for Subscription ID: 14, KPM Report Style: 2, UE ID: 0
+E2SM_KPM RIC Indication Content:
+-ColletStartTime:  2026-07-28 00:00:39
+-Measurements Data:
+-granulPeriod: 1000
+--Metric: DRB.UEThpDl, Value: [0.0]
+
+RIC Indication Received from gnbd_208_093_00019b_0 for Subscription ID: 14, KPM Report Style: 2, UE ID: 0
+E2SM_KPM RIC Indication Content:
+-ColletStartTime:  2026-07-28 00:00:41
+-Measurements Data:
+-granulPeriod: 1000
+--Metric: DRB.UEThpDl, Value: [0.0]
+
+RIC Indication Received from gnbd_208_093_00019b_0 for Subscription ID: 14, KPM Report Style: 2, UE ID: 0
+E2SM_KPM RIC Indication Content:
+-ColletStartTime:  2026-07-28 00:00:44
+-Measurements Data:
+-granulPeriod: 1000
+--Metric: DRB.UEThpDl, Value: [0.0]
+
+RIC Indication Received from gnbd_208_093_00019b_0 for Subscription ID: 14, KPM Report Style: 2, UE ID: 0
+E2SM_KPM RIC Indication Content:
+-ColletStartTime:  2026-07-28 00:00:47
+-Measurements Data:
+-granulPeriod: 1000
+--Metric: DRB.UEThpDl, Value: [0.0]
+
+RIC Indication Received from gnbd_208_093_00019b_0 for Subscription ID: 14, KPM Report Style: 2, UE ID: 0
+E2SM_KPM RIC Indication Content:
+-ColletStartTime:  2026-07-28 00:00:49
+-Measurements Data:
+-granulPeriod: 1000
+--Metric: DRB.UEThpDl, Value: [0.0]
+
+RIC Indication Received from gnbd_208_093_00019b_0 for Subscription ID: 14, KPM Report Style: 2, UE ID: 0
+E2SM_KPM RIC Indication Content:
+-ColletStartTime:  2026-07-28 00:00:51
+-Measurements Data:
+-granulPeriod: 1000
+--Metric: DRB.UEThpDl, Value: [0.0]
+
+RIC Indication Received from gnbd_208_093_00019b_0 for Subscription ID: 14, KPM Report Style: 2, UE ID: 0
+E2SM_KPM RIC Indication Content:
+-ColletStartTime:  2026-07-28 00:00:54
+-Measurements Data:
+-granulPeriod: 1000
+--Metric: DRB.UEThpDl, Value: [0.0]
+
+RIC Indication Received from gnbd_208_093_00019b_0 for Subscription ID: 14, KPM Report Style: 2, UE ID: 0
+E2SM_KPM RIC Indication Content:
+-ColletStartTime:  2026-07-28 00:00:57
+-Measurements Data:
+-granulPeriod: 1000
+--Metric: DRB.UEThpDl, Value: [0.0]
+
+RIC Indication Received from gnbd_208_093_00019b_0 for Subscription ID: 14, KPM Report Style: 2, UE ID: 0
+E2SM_KPM RIC Indication Content:
+-ColletStartTime:  2026-07-28 00:00:59
+-Measurements Data:
+-granulPeriod: 1000
+--Metric: DRB.UEThpDl, Value: [0.0]
+
+RIC Indication Received from gnbd_208_093_00019b_0 for Subscription ID: 14, KPM Report Style: 2, UE ID: 0
+E2SM_KPM RIC Indication Content:
+-ColletStartTime:  2026-07-28 00:01:02
+-Measurements Data:
+-granulPeriod: 1000
+--Metric: DRB.UEThpDl, Value: [0.0]
