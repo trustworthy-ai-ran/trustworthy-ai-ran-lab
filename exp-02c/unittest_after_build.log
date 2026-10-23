@@ -1,0 +1,63 @@
+[  0%] Built target ocudu_rohc
+[  0%] Built target ocudu_ue_security_manager
+[  0%] Built target fmt
+[  0%] Built target ocudu_up_resource_manager
+[  0%] Built target ocudu_pcap
+[  0%] Built target ocudu_security
+[  7%] Built target ocudulog
+[  7%] Built target ocuduvec
+[ 15%] Built target ocudu_support
+[ 15%] Built target ocudu_support_math
+[ 15%] Building CXX object tests/test_doubles/pdcp/CMakeFiles/pdcp_test_doubles.dir/Unity/unity_0_cxx.cxx.o
+[ 15%] Building CXX object tests/test_doubles/utils/CMakeFiles/test_rng.dir/test_rng.cpp.o
+[ 15%] Built target asn1_utils
+[ 15%] Built target ocudu_instrumentation
+[ 15%] Built target ocudu_gateway
+[ 23%] Built target f1ap_asn1
+[ 23%] Built target e2ap_asn1
+[ 30%] Built target lpp_asn1
+Consolidate compiler generated dependencies of target ocudu_ran
+[ 38%] Built target rrc_nr_asn1
+[ 53%] Built target ocudu_ran
+[ 61%] Built target ocudu_pdcp
+[ 61%] Built target ocudu_lpp_lib
+[ 76%] Built target ocudu_e2
+Consolidate compiler generated dependencies of target ocudu_f1ap_common
+[ 76%] Built target ocudu_f1ap_common
+[ 76%] Building CXX object tests/unittests/e2/CMakeFiles/e2_test_helpers.dir/common/e2ap_asn1_packer.cpp.o
+[ 84%] Built target ocudu_rrc
+[ 84%] Building CXX object tests/test_doubles/rrc/CMakeFiles/rrc_test_doubles.dir/Unity/unity_0_cxx.cxx.o
+[ 84%] Linking CXX static library libtest_rng.a
+[ 84%] Built target test_rng
+[ 84%] Linking CXX static library libe2_test_helpers.a
+[ 84%] Built target e2_test_helpers
+[ 92%] Linking CXX static library libpdcp_test_doubles.a
+[ 92%] Built target pdcp_test_doubles
+[ 92%] Linking CXX static library librrc_test_doubles.a
+[ 92%] Built target rrc_test_doubles
+[100%] Building CXX object tests/test_doubles/f1ap/CMakeFiles/f1ap_test_doubles.dir/Unity/unity_0_cxx.cxx.o
+[100%] Linking CXX static library libf1ap_test_doubles.a
+[100%] Built target f1ap_test_doubles
+[100%] Building CXX object tests/unittests/e2/CMakeFiles/e2sm_kpm_test.dir/e2sm_kpm_test.cpp.o
+[100%] Linking CXX executable e2sm_kpm_test
+[100%] Built target e2sm_kpm_test
+[  0%] Built target fmt
+[  0%] Built target ocudu_pcap
+[ 20%] Built target ocudulog
+[ 20%] Built target ocuduvec
+[ 40%] Built target ocudu_support
+[ 40%] Built target ocudu_support_math
+[ 40%] Built target asn1_utils
+[ 40%] Built target ocudu_gateway
+[ 40%] Built target e2ap_asn1
+[ 80%] Built target ocudu_e2
+Consolidate compiler generated dependencies of target e2_test_helpers
+[ 80%] Built target e2_test_helpers
+[ 80%] Building CXX object tests/unittests/e2/CMakeFiles/e2sm_kpm_meas_provider_metrics_test.dir/e2sm_kpm_meas_provider_metrics_test.cpp.o
+[100%] Linking CXX executable e2sm_kpm_meas_provider_metrics_test
+[100%] Built target e2sm_kpm_meas_provider_metrics_test
+
+real	1m13.843s
+user	1m4.109s
+sys	0m17.111s
+EXIT=0

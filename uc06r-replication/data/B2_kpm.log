@@ -1,0 +1,8 @@
+1790271843.394 1790271843393 20/RMR [INFO] ric message routing library on SI95 p=4562 mv=3 flg=00 id=a (f447e29 4.9.4 built: Dec 13 2023)
+1790271844.501 Subscribe to E2 node ID: gnbd_208_093_00019b_0, RAN func: e2sm_kpm, Report Style: 2, UE_id: 0, metrics: ['DRB.RlcSduDelayDl']
+1790271844.514 Successfully subscribed with Subscription ID:  3Jmgq0FoggleBUSe2Oo4up1UvyP
+1790271844.520 Received Subscription ID to E2EventInstanceId mapping: 3Jmgq0FoggleBUSe2Oo4up1UvyP -> 2
+1790271844.520 {'response': 'OK', 'status': 200, 'payload': '{}', 'ctype': 'application/json', 'attachment': None, 'mode': 'plain'}
+1790271844.520 10.0.2.13 - - [24/Sep/2026 17:44:04] "POST /ric/v1/subscriptions/response HTTP/1.1" 200 -
+1790273080.734 ^CUnsubscribe Subscription ID:  3Jmgq0FoggleBUSe2Oo4up1UvyP
+1790273080.739 Successfully unsubscribed from Subscription ID:  3Jmgq0FoggleBUSe2Oo4up1UvyP

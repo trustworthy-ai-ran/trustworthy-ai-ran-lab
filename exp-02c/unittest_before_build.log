@@ -1,0 +1,465 @@
+=== BEFORE build: ~/ocudu-prefix @ f396a74e7fbf621d94a9e624d24ed6c312ff40a3, 2026-09-23T10:11:04-07:00 ===
+ M ../tests/unittests/e2/e2sm_kpm_meas_provider_metrics_test.cpp
+ M ../tests/unittests/e2/e2sm_kpm_test.cpp
+-- The C compiler identification is GNU 11.4.0
+-- The CXX compiler identification is GNU 11.4.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- The build type is RelWithDebInfo
+-- Performing Test HAVE_NON_VIRTUAL_DTOR
+-- Performing Test HAVE_NON_VIRTUAL_DTOR - Success
+-- Performing Test HAVE_SUGGEST_OVERRIDE
+-- Performing Test HAVE_SUGGEST_OVERRIDE - Success
+-- Performing Test HAVE_SHADOW
+-- Performing Test HAVE_SHADOW - Success
+-- Performing Test HAVE_EXTRA_SEMI
+-- Performing Test HAVE_EXTRA_SEMI - Success
+-- Performing Test HAVE_NO_RTTI
+-- Performing Test HAVE_NO_RTTI - Success
+-- Performing Test HAVE_NO_MAYBE_UNINITIALIZED
+-- Performing Test HAVE_NO_MAYBE_UNINITIALIZED - Success
+-- Assertion level set to NORMAL
+-- Generating build information
+-- Could NOT find libdw (missing: LIBDW_LIBRARY LIBDW_INCLUDE_DIR) 
+-- Could NOT find libbfd (missing: LIBBFD_LIBRARY LIBBFD_INCLUDE_DIR) 
+-- Could NOT find libdwarf (missing: LIBDWARF_LIBRARY LIBDWARF_INCLUDE_DIR LIBELF_LIBRARY LIBELF_INCLUDE_DIR) 
+-- Found Backward: /home/payam/ocudu-prefix/cmake/modules  
+-- Backward-cpp found, but external libraries are missing.
+-- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.2") 
+-- Checking for module 'rohc>=2.3.1'
+--   No package 'rohc' found
+-- Could NOT find ROHC (missing: ROHC_LIBRARIES ROHC_INCLUDE_DIRS) 
+-- OpenSSL not found
+-- Checking for module 'fftw3f >= 3.0'
+--   Found fftw3f , version 3.3.8
+-- FFTW3F LIBRARIES: /usr/lib/x86_64-linux-gnu/libfftw3f.so
+-- FFTW3F STATIC LIBRARIES: /usr/lib/x86_64-linux-gnu/libfftw3f.a
+-- FFTW3F INCLUDE DIRS: /usr/include
+-- Found FFTW3F: /usr/lib/x86_64-linux-gnu/libfftw3f.so  
+-- Could NOT find MKL (missing: MKL_LIBRARIES MKL_CORE MKL_ILP MKL_SEQ) 
+-- Could NOT find FFTZ (missing: FFTZ_INCLUDE_DIR FFTZ_LIBRARIES) 
+-- Found GTest: /usr/lib/x86_64-linux-gnu/cmake/GTest/GTestConfig.cmake (found version "1.11.0")  
+-- Found Threads: TRUE  
+-- UHD LIBRARIES UHD_LIBRARIES-NOTFOUND
+-- UHD INCLUDE DIRS UHD_INCLUDE_DIRS-NOTFOUND
+-- Could NOT find UHD (missing: UHD_LIBRARIES UHD_INCLUDE_DIRS) 
+-- Found yaml-cpp, version 0.7.0
+-- Sidekiq LIBRARIES Sidekiq_LIBRARY-NOTFOUNDSidekiq_LIBRARY_GLIB-NOTFOUNDSidekiq_LIBRARY_USB-NOTFOUND/usr/lib/x86_64-linux-gnu/libtirpc.so.3
+-- Sidekiq INCLUDE DIRS Sidekiq_INCLUDE_DIRS-NOTFOUND
+-- Sidekiq VERSION 
+-- Could NOT find Sidekiq (missing: Sidekiq_INCLUDE_DIRS) 
+-- FINDING ZEROMQ.
+-- Checking for module 'ZeroMQ'
+--   No package 'ZeroMQ' found
+-- Found libZEROMQ: /usr/include, /usr/lib/x86_64-linux-gnu/libzmq.so
+-- TUNE value is generic
+-- ARCH value is native
+-- Performing Test HAVE_MARCH
+-- Performing Test HAVE_MARCH - Success
+-- Performing Test HAVE_MTUNE
+-- Performing Test HAVE_MTUNE - Success
+-- Adding binary target: ocu
+-- Adding binary target: ocucp
+-- Adding binary target: ocuup
+-- Adding binary target: odu
+-- Adding binary target: odu_split_6
+-- Adding binary target: odu_split_7_2
+-- Adding binary target: odu_split_8
+-- Adding binary target: odu_low
+-- Adding binary target: gnb
+-- Adding binary target: gnb_split_6
+-- Adding binary target: gnb_split_7_2
+-- Adding binary target: gnb_split_8
+-- Adding binary target: ru_emulator
+-- Could NOT find Doxygen (missing: DOXYGEN_EXECUTABLE) 
+-- Checking for module 'sctp'
+--   No package 'sctp' found
+-- SCTP LIBRARIES: /usr/lib/x86_64-linux-gnu/libsctp.so
+-- SCTP INCLUDE DIRS: /usr/include
+-- Found SCTP: /usr/lib/x86_64-linux-gnu/libsctp.so  
+-- Checking for module 'mbedtls'
+--   No package 'mbedtls' found
+-- MBEDTLS LIBRARIES: /usr/lib/x86_64-linux-gnu/libmbedcrypto.so
+-- MBEDTLS STATIC LIBRARIES: /usr/lib/x86_64-linux-gnu/libmbedcrypto.a
+-- MBEDTLS INCLUDE DIRS: /usr/include
+-- Found MbedTLS: /usr/lib/x86_64-linux-gnu/libmbedcrypto.so  
+-- Performing Test HAVE_NO_DEPRECATED
+-- Performing Test HAVE_NO_DEPRECATED - Success
+-- Building OCUDU version 26.04.0
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/payam/ocudu-prefix/build
+
+real	0m4.151s
+user	0m2.439s
+sys	0m1.585s
+[  0%] Building CXX object lib/pcap/CMakeFiles/ocudu_pcap.dir/backend_pcap_writer.cpp.o
+[  0%] Building CXX object lib/cu_cp/up_resource_manager/CMakeFiles/ocudu_up_resource_manager.dir/up_resource_manager_impl.cpp.o
+[  0%] Building CXX object lib/pcap/CMakeFiles/ocudu_pcap.dir/dlt_pcap_impl.cpp.o
+[  0%] Building CXX object lib/rohc/CMakeFiles/ocudu_rohc.dir/rohc_factory.cpp.o
+[  0%] Building CXX object lib/cu_cp/ue_security_manager/CMakeFiles/ocudu_ue_security_manager.dir/ue_security_manager_impl.cpp.o
+[  0%] Building CXX object lib/security/CMakeFiles/ocudu_security.dir/security_engine_factory.cpp.o
+[  0%] Building CXX object external/fmt/CMakeFiles/fmt.dir/src/format.cc.o
+[  0%] Building CXX object lib/rohc/CMakeFiles/ocudu_rohc.dir/rohc_support.cpp.o
+[  0%] Linking CXX static library libocudu_rohc.a
+[  0%] Built target ocudu_rohc
+[  0%] Building CXX object lib/cu_cp/up_resource_manager/CMakeFiles/ocudu_up_resource_manager.dir/up_resource_manager_helpers.cpp.o
+[  0%] Building CXX object lib/security/CMakeFiles/ocudu_security.dir/ciphering_engine_nea1.cpp.o
+[  0%] Building CXX object lib/pcap/CMakeFiles/ocudu_pcap.dir/mac_pcap_impl.cpp.o
+[  0%] Linking CXX static library libocudu_ue_security_manager.a
+[  0%] Building CXX object external/fmt/CMakeFiles/fmt.dir/src/os.cc.o
+[  0%] Built target ocudu_ue_security_manager
+[  0%] Building CXX object lib/pcap/CMakeFiles/ocudu_pcap.dir/pcap_file_writer.cpp.o
+[  0%] Building CXX object lib/pcap/CMakeFiles/ocudu_pcap.dir/rlc_pcap_impl.cpp.o
+[  0%] Building CXX object lib/pcap/CMakeFiles/ocudu_pcap.dir/pcap_rlc_pdu_context.cpp.o
+[  0%] Building CXX object lib/security/CMakeFiles/ocudu_security.dir/ciphering_engine_nea2.cpp.o
+[  0%] Building CXX object lib/security/CMakeFiles/ocudu_security.dir/ciphering_engine_nea2_psa.cpp.o
+[  0%] Building CXX object lib/security/CMakeFiles/ocudu_security.dir/ciphering_engine_nea3.cpp.o
+[  0%] Linking CXX static library libfmt.a
+[  0%] Built target fmt
+[  0%] Building CXX object lib/security/CMakeFiles/ocudu_security.dir/integrity_engine_generic.cpp.o
+[  0%] Building CXX object lib/ocudulog/CMakeFiles/ocudulog.dir/backend_worker.cpp.o
+[  0%] Linking CXX static library libocudu_pcap.a
+[  0%] Built target ocudu_pcap
+[  7%] Building CXX object lib/ocudulog/CMakeFiles/ocudulog.dir/ocudulog.cpp.o
+[  7%] Building CXX object lib/security/CMakeFiles/ocudu_security.dir/integrity_engine_nia2_cmac.cpp.o
+[  7%] Building CXX object lib/security/CMakeFiles/ocudu_security.dir/integrity_engine_nia2_non_cmac.cpp.o
+[  7%] Building CXX object lib/ocudulog/CMakeFiles/ocudulog.dir/ocudulog_c.cpp.o
+[  7%] Building CXX object lib/security/CMakeFiles/ocudu_security.dir/integrity_engine_nia2_psa.cpp.o
+[  7%] Building CXX object lib/security/CMakeFiles/ocudu_security.dir/security.cpp.o
+[  7%] Building CXX object lib/security/CMakeFiles/ocudu_security.dir/security_engine_impl.cpp.o
+[  7%] Linking CXX static library libocudu_up_resource_manager.a
+[  7%] Built target ocudu_up_resource_manager
+[  7%] Building CXX object lib/security/CMakeFiles/ocudu_security.dir/s3g.cpp.o
+[  7%] Building CXX object lib/ocudulog/CMakeFiles/ocudulog.dir/event_trace.cpp.o
+[  7%] Building CXX object lib/security/CMakeFiles/ocudu_security.dir/zuc.cpp.o
+[  7%] Building CXX object lib/ocudulog/CMakeFiles/ocudulog.dir/formatters/json_formatter.cpp.o
+[  7%] Building CXX object lib/ocudulog/CMakeFiles/ocudulog.dir/formatters/text_formatter.cpp.o
+[  7%] Linking CXX static library libocudu_security.a
+[  7%] Built target ocudu_security
+[  7%] Linking CXX static library libocudulog.a
+[  7%] Built target ocudulog
+[  7%] Building CXX object lib/ocuduvec/CMakeFiles/ocuduvec.dir/clip.cpp.o
+[  7%] Building CXX object lib/support/CMakeFiles/ocudu_support.dir/executors/metrics/executor_metrics_channel.cpp.o
+[  7%] Building CXX object lib/ocuduvec/CMakeFiles/ocuduvec.dir/accumulate.cpp.o
+[  7%] Building CXX object lib/ocuduvec/CMakeFiles/ocuduvec.dir/add.cpp.o
+[  7%] Building CXX object lib/ocuduvec/CMakeFiles/ocuduvec.dir/bit.cpp.o
+[  7%] Building CXX object lib/support/CMakeFiles/ocudu_support.dir/executors/metrics/executor_metrics_backend.cpp.o
+[  7%] Building CXX object lib/support/CMakeFiles/ocudu_support.dir/executors/priority_task_queue.cpp.o
+[  7%] Building CXX object lib/ocuduvec/CMakeFiles/ocuduvec.dir/compare.cpp.o
+[  7%] Building CXX object lib/support/CMakeFiles/ocudu_support.dir/executors/priority_task_worker.cpp.o
+[  7%] Building CXX object lib/ocuduvec/CMakeFiles/ocuduvec.dir/conversion.cpp.o
+[  7%] Building CXX object lib/ocuduvec/CMakeFiles/ocuduvec.dir/convolution.cpp.o
+[  7%] Building CXX object lib/support/CMakeFiles/ocudu_support.dir/executors/task_execution_manager.cpp.o
+[  7%] Building CXX object lib/ocuduvec/CMakeFiles/ocuduvec.dir/division.cpp.o
+[  7%] Building CXX object lib/ocuduvec/CMakeFiles/ocuduvec.dir/dot_prod.cpp.o
+[  7%] Building CXX object lib/support/CMakeFiles/ocudu_support.dir/executors/task_worker.cpp.o
+[  7%] Building CXX object lib/ocuduvec/CMakeFiles/ocuduvec.dir/modulus_square.cpp.o
+[  7%] Building CXX object lib/ocuduvec/CMakeFiles/ocuduvec.dir/prod.cpp.o
+[  7%] Building CXX object lib/support/CMakeFiles/ocudu_support.dir/executors/task_worker_pool.cpp.o
+[  7%] Building CXX object lib/ocuduvec/CMakeFiles/ocuduvec.dir/sc_prod.cpp.o
+[  7%] Building CXX object lib/ocuduvec/CMakeFiles/ocuduvec.dir/subtract.cpp.o
+[  7%] Building CXX object lib/ocuduvec/CMakeFiles/ocuduvec.dir/unwrap.cpp.o
+[  7%] Building CXX object lib/support/CMakeFiles/ocudu_support.dir/executors/unique_thread.cpp.o
+[  7%] Building CXX object lib/support/CMakeFiles/ocudu_support.dir/executors/execution_context_description.cpp.o
+[  7%] Building CXX object lib/support/CMakeFiles/ocudu_support.dir/executors/executor_decoration_factory.cpp.o
+[  7%] Building CXX object lib/support/CMakeFiles/ocudu_support.dir/network/io_broker_epoll.cpp.o
+[  7%] Linking CXX static library libocuduvec.a
+[  7%] Built target ocuduvec
+[  7%] Building CXX object lib/support/math/CMakeFiles/ocudu_support_math.dir/math_utils.cpp.o
+[  7%] Building CXX object lib/support/math/CMakeFiles/ocudu_support_math.dir/curve_fitting_find_max.cpp.o
+[  7%] Building CXX object lib/support/CMakeFiles/ocudu_support.dir/network/io_broker_factory.cpp.o
+[  7%] Building CXX object lib/support/CMakeFiles/ocudu_support.dir/network/io_timer_source.cpp.o
+[  7%] Linking CXX static library libocudu_support_math.a
+[  7%] Built target ocudu_support_math
+[  7%] Building CXX object lib/ran/CMakeFiles/ocudu_ran.dir/beamforming/beam_identifier_helpers.cpp.o
+[  7%] Building CXX object lib/ran/CMakeFiles/ocudu_ran.dir/beamforming/beam_weights_codebook_generator.cpp.o
+[  7%] Building CXX object lib/support/CMakeFiles/ocudu_support.dir/network/sockets.cpp.o
+[  7%] Building CXX object lib/ran/CMakeFiles/ocudu_ran.dir/cause/ngap_cause_converters.cpp.o
+[  7%] Building CXX object lib/support/CMakeFiles/ocudu_support.dir/network/transport_layer_address.cpp.o
+[  7%] Building CXX object lib/support/CMakeFiles/ocudu_support.dir/synchronization/futex_util.cpp.o
+[  7%] Building CXX object lib/ran/CMakeFiles/ocudu_ran.dir/cause/f1ap_cause_converters.cpp.o
+[  7%] Building CXX object lib/support/CMakeFiles/ocudu_support.dir/tracing/resource_usage.cpp.o
+[ 15%] Building CXX object lib/support/CMakeFiles/ocudu_support.dir/tracing/event_tracing.cpp.o
+[ 15%] Building CXX object lib/support/CMakeFiles/ocudu_support.dir/backtrace.cpp.o
+[ 15%] Building CXX object lib/support/CMakeFiles/ocudu_support.dir/bit_encoding.cpp.o
+[ 15%] Building CXX object lib/ran/CMakeFiles/ocudu_ran.dir/cause/e1ap_cause_converters.cpp.o
+[ 15%] Building CXX object lib/support/CMakeFiles/ocudu_support.dir/byte_buffer.cpp.o
+[ 15%] Building CXX object lib/support/CMakeFiles/ocudu_support.dir/byte_buffer_chain.cpp.o
+[ 15%] Building CXX object lib/ran/CMakeFiles/ocudu_ran.dir/csi_report/csi_report_config_helpers.cpp.o
+[ 15%] Building CXX object lib/support/CMakeFiles/ocudu_support.dir/cpu_architecture_info.cpp.o
+[ 15%] Building CXX object lib/ran/CMakeFiles/ocudu_ran.dir/csi_report/csi_report_on_pucch_helpers.cpp.o
+[ 15%] Building CXX object lib/support/CMakeFiles/ocudu_support.dir/pool_memory_region.cpp.o
+[ 15%] Building CXX object lib/support/CMakeFiles/ocudu_support.dir/resource_usage/perf_event_powercap_reader_impl.cpp.o
+[ 15%] Building CXX object lib/ran/CMakeFiles/ocudu_ran.dir/csi_report/csi_report_on_pusch_helpers.cpp.o
+[ 15%] Building CXX object lib/support/CMakeFiles/ocudu_support.dir/resource_usage/powercap_energy_reader_impl.cpp.o
+[ 15%] Building CXX object lib/support/CMakeFiles/ocudu_support.dir/resource_usage/rapl_msr_energy_reader_impl.cpp.o
+[ 15%] Building CXX object lib/support/CMakeFiles/ocudu_support.dir/resource_usage/power_consumption.cpp.o
+[ 15%] Building CXX object lib/ran/CMakeFiles/ocudu_ran.dir/csi_report/csi_report_on_puxch_helpers.cpp.o
+[ 15%] Building CXX object lib/support/CMakeFiles/ocudu_support.dir/resource_usage/resource_usage_utils.cpp.o
+[ 15%] Building CXX object lib/support/CMakeFiles/ocudu_support.dir/rate_limiting/token_bucket.cpp.o
+[ 15%] Building CXX object lib/support/CMakeFiles/ocudu_support.dir/rate_limiting/lockfree_token_bucket.cpp.o
+[ 15%] Building CXX object lib/support/CMakeFiles/ocudu_support.dir/signal_handling.cpp.o
+[ 15%] Building CXX object lib/ran/CMakeFiles/ocudu_ran.dir/csi_rs/csi_rs_pattern.cpp.o
+[ 15%] Building CXX object lib/support/CMakeFiles/ocudu_support.dir/sysinfo.cpp.o
+[ 15%] Building CXX object lib/support/CMakeFiles/ocudu_support.dir/timers.cpp.o
+[ 15%] Building CXX object lib/ran/CMakeFiles/ocudu_ran.dir/csi_rs/csi_rs_config_helpers.cpp.o
+[ 15%] Building CXX object lib/ran/CMakeFiles/ocudu_ran.dir/csi_rs/frequency_allocation_type.cpp.o
+[ 15%] Building CXX object lib/ran/CMakeFiles/ocudu_ran.dir/pdcch/cce_to_prb_mapping.cpp.o
+[ 15%] Building CXX object lib/ran/CMakeFiles/ocudu_ran.dir/pdcch/coreset.cpp.o
+[ 15%] Building CXX object lib/ran/CMakeFiles/ocudu_ran.dir/pdcch/dci_packing.cpp.o
+[ 15%] Building CXX object lib/ran/CMakeFiles/ocudu_ran.dir/pdcch/pdcch_candidates.cpp.o
+[ 15%] Building CXX object lib/ran/CMakeFiles/ocudu_ran.dir/pdcch/pdcch_type0_css_coreset_config.cpp.o
+[ 15%] Building CXX object lib/ran/CMakeFiles/ocudu_ran.dir/pdcch/pdcch_type0_css_occasions.cpp.o
+[ 15%] Building CXX object lib/ran/CMakeFiles/ocudu_ran.dir/pdcch/search_space.cpp.o
+[ 15%] Building CXX object lib/ran/CMakeFiles/ocudu_ran.dir/pdsch/dlsch_info.cpp.o
+[ 15%] Building CXX object lib/ran/CMakeFiles/ocudu_ran.dir/pdsch/pdsch_dmrs_symbol_mask.cpp.o
+[ 15%] Linking CXX static library libocudu_support.a
+[ 15%] Building CXX object lib/ran/CMakeFiles/ocudu_ran.dir/pdsch/pdsch_mcs.cpp.o
+[ 15%] Built target ocudu_support
+[ 15%] Building CXX object lib/asn1/CMakeFiles/asn1_utils.dir/asn1_utils.cpp.o
+[ 23%] Building CXX object lib/ran/CMakeFiles/ocudu_ran.dir/pdsch/pdsch_antenna_port_mapping.cpp.o
+[ 23%] Building CXX object lib/ran/CMakeFiles/ocudu_ran.dir/prs/prs.cpp.o
+[ 23%] Building CXX object lib/ran/CMakeFiles/ocudu_ran.dir/prach/prach_configuration.cpp.o
+[ 23%] Building CXX object lib/ran/CMakeFiles/ocudu_ran.dir/prach/prach_cyclic_shifts.cpp.o
+[ 23%] Building CXX object lib/ran/CMakeFiles/ocudu_ran.dir/prach/prach_frequency_mapping.cpp.o
+[ 23%] Building CXX object lib/ran/CMakeFiles/ocudu_ran.dir/prach/prach_preamble_information.cpp.o
+[ 23%] Building CXX object lib/ran/CMakeFiles/ocudu_ran.dir/prach/prach_helper.cpp.o
+[ 23%] Building CXX object lib/gateways/CMakeFiles/ocudu_gateway.dir/sctp_socket.cpp.o
+[ 23%] Building CXX object lib/ran/CMakeFiles/ocudu_ran.dir/prach/prach_time_mapping.cpp.o
+[ 23%] Building CXX object lib/gateways/CMakeFiles/ocudu_gateway.dir/sctp_network_gateway_common_impl.cpp.o
+[ 23%] Building CXX object lib/ran/CMakeFiles/ocudu_ran.dir/prach/prach_occasion_mapping.cpp.o
+[ 23%] Building CXX object lib/gateways/CMakeFiles/ocudu_gateway.dir/sctp_network_client_impl.cpp.o
+[ 23%] Building CXX object lib/gateways/CMakeFiles/ocudu_gateway.dir/sctp_network_server_impl.cpp.o
+[ 23%] Building CXX object lib/gateways/CMakeFiles/ocudu_gateway.dir/sctp_dtls.cpp.o
+[ 23%] Building CXX object lib/ran/CMakeFiles/ocudu_ran.dir/prach/ssb_to_ro_mapping.cpp.o
+[ 23%] Linking CXX static library libasn1_utils.a
+[ 23%] Built target asn1_utils
+[ 23%] Building CXX object lib/gateways/CMakeFiles/ocudu_gateway.dir/sctp_dtls_ssl.cpp.o
+[ 23%] Building CXX object lib/ran/CMakeFiles/ocudu_ran.dir/precoding/precoding_codebook_configuration.cpp.o
+[ 23%] Building CXX object lib/ran/CMakeFiles/ocudu_ran.dir/precoding/precoding_codebooks.cpp.o
+[ 23%] Building CXX object lib/ran/CMakeFiles/ocudu_ran.dir/precoding/two_port/precoding_codebooks.cpp.o
+[ 23%] Building CXX object lib/gateways/CMakeFiles/ocudu_gateway.dir/udp_network_gateway_impl.cpp.o
+[ 23%] Building CXX object lib/ran/CMakeFiles/ocudu_ran.dir/precoding/type1_sp/precoding_codebook_helpers.cpp.o
+[ 23%] Building CXX object lib/gateways/CMakeFiles/ocudu_gateway.dir/sctp_network_client_factory.cpp.o
+[ 23%] Building CXX object lib/gateways/CMakeFiles/ocudu_gateway.dir/sctp_network_server_factory.cpp.o
+[ 23%] Building CXX object lib/ran/CMakeFiles/ocudu_ran.dir/precoding/type1_sp/precoding_codebooks.cpp.o
+[ 23%] Building CXX object lib/ran/CMakeFiles/ocudu_ran.dir/precoding/type2/precoding_codebook_helpers.cpp.o
+[ 23%] Building CXX object lib/gateways/CMakeFiles/ocudu_gateway.dir/udp_network_gateway_factory.cpp.o
+[ 23%] Building CXX object lib/ran/CMakeFiles/ocudu_ran.dir/precoding/type2/precoding_codebooks.cpp.o
+[ 23%] Building CXX object lib/ran/CMakeFiles/ocudu_ran.dir/ptrs/ptrs_pattern.cpp.o
+[ 23%] Building CXX object lib/ran/CMakeFiles/ocudu_ran.dir/pucch/pucch_info.cpp.o
+[ 23%] Building CXX object lib/instrumentation/CMakeFiles/ocudu_instrumentation.dir/traces/critical_traces.cpp.o
+[ 23%] Building CXX object tests/test_doubles/utils/CMakeFiles/test_rng.dir/test_rng.cpp.o
+[ 23%] Building CXX object lib/ran/CMakeFiles/ocudu_ran.dir/pusch/pusch_antenna_port_mapping.cpp.o
+[ 30%] Building CXX object lib/instrumentation/CMakeFiles/ocudu_instrumentation.dir/traces/du_traces.cpp.o
+[ 30%] Linking CXX static library libtest_rng.a
+[ 30%] Built target test_rng
+[ 30%] Building CXX object tests/test_doubles/pdcp/CMakeFiles/pdcp_test_doubles.dir/Unity/unity_0_cxx.cxx.o
+[ 30%] Building CXX object lib/ran/CMakeFiles/ocudu_ran.dir/pusch/pusch_dmrs_symbol_mask.cpp.o
+[ 30%] Building CXX object lib/ran/CMakeFiles/ocudu_ran.dir/pusch/pusch_mcs.cpp.o
+[ 30%] Linking CXX static library libocudu_gateway.a
+[ 30%] Built target ocudu_gateway
+[ 30%] Building CXX object lib/ran/CMakeFiles/ocudu_ran.dir/pusch/pusch_tpmi_select.cpp.o
+[ 30%] Building CXX object lib/ran/CMakeFiles/ocudu_ran.dir/pusch/pusch_uci_beta_offset.cpp.o
+[ 30%] Building CXX object lib/ran/CMakeFiles/ocudu_ran.dir/pusch/ulsch_info.cpp.o
+[ 30%] Building CXX object lib/ran/CMakeFiles/ocudu_ran.dir/qos/five_qi_qos_mapping.cpp.o
+[ 30%] Building CXX object lib/instrumentation/CMakeFiles/ocudu_instrumentation.dir/traces/ru_traces.cpp.o
+[ 30%] Building CXX object lib/ran/CMakeFiles/ocudu_ran.dir/uci/uci_part2_size_calculator.cpp.o
+[ 30%] Building CXX object lib/ran/CMakeFiles/ocudu_ran.dir/band_helper.cpp.o
+[ 38%] Building CXX object lib/ran/CMakeFiles/ocudu_ran.dir/sch/tbs_calculator.cpp.o
+[ 38%] Building CXX object lib/instrumentation/CMakeFiles/ocudu_instrumentation.dir/traces/up_traces.cpp.o
+[ 46%] Linking CXX static library libpdcp_test_doubles.a
+[ 46%] Built target pdcp_test_doubles
+[ 46%] Building CXX object lib/instrumentation/CMakeFiles/ocudu_instrumentation.dir/traces/ofh_traces.cpp.o
+[ 46%] Building CXX object lib/ran/CMakeFiles/ocudu_ran.dir/resource_allocation/resource_allocation_frequency.cpp.o
+[ 46%] Building CXX object lib/ran/CMakeFiles/ocudu_ran.dir/resource_allocation/vrb_to_prb.cpp.o
+[ 46%] Building CXX object lib/ran/CMakeFiles/ocudu_ran.dir/sch/sch_segmentation.cpp.o
+[ 46%] Building CXX object lib/ran/CMakeFiles/ocudu_ran.dir/sib/sib_helper.cpp.o
+[ 46%] Building CXX object lib/asn1/CMakeFiles/e2ap_asn1.dir/e2ap/e2ap.cpp.o
+[ 46%] Linking CXX static library libocudu_instrumentation.a
+[ 46%] Building CXX object lib/ran/CMakeFiles/ocudu_ran.dir/srs/srs_bandwidth_configuration.cpp.o
+[ 46%] Built target ocudu_instrumentation
+[ 46%] Building CXX object lib/ran/CMakeFiles/ocudu_ran.dir/srs/srs_configuration_helpers.cpp.o
+[ 46%] Building CXX object lib/ran/CMakeFiles/ocudu_ran.dir/srs/srs_information.cpp.o
+[ 46%] Building CXX object lib/ran/CMakeFiles/ocudu_ran.dir/ssb/pbch_mib_pack.cpp.o
+[ 46%] Building CXX object lib/ran/CMakeFiles/ocudu_ran.dir/ssb/ssb_freq_position_generator.cpp.o
+[ 46%] Building CXX object lib/asn1/CMakeFiles/e2ap_asn1.dir/e2sm/e2sm_common_ies.cpp.o
+[ 46%] Building CXX object lib/ran/CMakeFiles/ocudu_ran.dir/ssb/ssb_gscn.cpp.o
+[ 46%] Building CXX object lib/asn1/CMakeFiles/f1ap_asn1.dir/f1ap/common.cpp.o
+[ 46%] Building CXX object lib/asn1/CMakeFiles/f1ap_asn1.dir/f1ap/f1ap_ies.cpp.o
+[ 46%] Building CXX object lib/ran/CMakeFiles/ocudu_ran.dir/ssb/ssb_helper.cpp.o
+[ 46%] Building CXX object lib/asn1/CMakeFiles/f1ap_asn1.dir/f1ap/f1ap_pdu_items.cpp.o
+[ 46%] Building CXX object lib/asn1/CMakeFiles/lpp_asn1.dir/lpp/lpp.cpp.o
+[ 46%] Building CXX object lib/asn1/rrc_nr/CMakeFiles/rrc_nr_asn1.dir/common.cpp.o
+[ 53%] Linking CXX static library liblpp_asn1.a
+[ 53%] Built target lpp_asn1
+[ 53%] Building CXX object lib/asn1/rrc_nr/CMakeFiles/rrc_nr_asn1.dir/serving_cell.cpp.o
+[ 53%] Building CXX object lib/ran/CMakeFiles/ocudu_ran.dir/ssb/ssb_mapping.cpp.o
+[ 53%] Building CXX object lib/asn1/CMakeFiles/e2ap_asn1.dir/e2sm/e2sm_kpm_ies.cpp.o
+[ 53%] Building CXX object lib/asn1/rrc_nr/CMakeFiles/rrc_nr_asn1.dir/ue_cap.cpp.o
+[ 53%] Building CXX object lib/ran/CMakeFiles/ocudu_ran.dir/tdd_ul_dl_config.cpp.o
+[ 53%] Building CXX object lib/ran/CMakeFiles/ocudu_ran.dir/drx_config.cpp.o
+[ 53%] Building CXX object lib/ran/CMakeFiles/ocudu_ran.dir/ntn_location_mapping.cpp.o
+[ 53%] Building CXX object lib/asn1/rrc_nr/CMakeFiles/rrc_nr_asn1.dir/bwp_cfg.cpp.o
+[ 53%] Linking CXX static library libocudu_ran.a
+[ 53%] Built target ocudu_ran
+[ 53%] Building CXX object lib/pdcp/CMakeFiles/ocudu_pdcp.dir/pdcp_factory.cpp.o
+[ 53%] Building CXX object lib/asn1/CMakeFiles/e2ap_asn1.dir/e2sm/e2sm_rc_ies.cpp.o
+[ 61%] Building CXX object lib/pdcp/CMakeFiles/ocudu_pdcp.dir/pdcp_entity_tx.cpp.o
+[ 61%] Building CXX object lib/asn1/CMakeFiles/e2ap_asn1.dir/e2sm/e2sm_ccc.cpp.o
+[ 61%] Building CXX object lib/asn1/CMakeFiles/f1ap_asn1.dir/f1ap/f1ap_pdu_contents_ue.cpp.o
+[ 61%] Building CXX object lib/pdcp/CMakeFiles/ocudu_pdcp.dir/pdcp_entity_rx.cpp.o
+[ 61%] Building CXX object lib/asn1/rrc_nr/CMakeFiles/rrc_nr_asn1.dir/sys_info.cpp.o
+[ 61%] Linking CXX static library libe2ap_asn1.a
+[ 61%] Building CXX object lib/pdcp/CMakeFiles/ocudu_pdcp.dir/pdcp_tx_window.cpp.o
+[ 61%] Built target e2ap_asn1
+[ 61%] Building CXX object lib/asn1/CMakeFiles/f1ap_asn1.dir/f1ap/f1ap_pdu_contents.cpp.o
+[ 61%] Building CXX object lib/pdcp/CMakeFiles/ocudu_pdcp.dir/pdcp_pdu.cpp.o
+[ 61%] Building CXX object lib/asn1/rrc_nr/CMakeFiles/rrc_nr_asn1.dir/radio_bearer_cfg.cpp.o
+[ 61%] Building CXX object lib/pdcp/CMakeFiles/ocudu_pdcp.dir/pdcp_metrics_aggregator.cpp.o
+[ 69%] Building CXX object lib/asn1/rrc_nr/CMakeFiles/rrc_nr_asn1.dir/dl_ccch_msg_ies.cpp.o
+[ 69%] Linking CXX static library libocudu_pdcp.a
+[ 69%] Built target ocudu_pdcp
+[ 69%] Building CXX object lib/asn1/CMakeFiles/f1ap_asn1.dir/f1ap/f1ap.cpp.o
+[ 69%] Building CXX object lib/asn1/rrc_nr/CMakeFiles/rrc_nr_asn1.dir/dl_dcch_msg_ies.cpp.o
+[ 69%] Building CXX object lib/e2/CMakeFiles/ocudu_e2.dir/procedures/e2ap_setup_procedure.cpp.o
+[ 69%] Building CXX object lib/asn1/rrc_nr/CMakeFiles/rrc_nr_asn1.dir/ul_ccch_msg_ies.cpp.o
+[ 69%] Building CXX object lib/e2/CMakeFiles/ocudu_e2.dir/procedures/e2_setup_routine.cpp.o
+[ 69%] Building CXX object lib/lpp/CMakeFiles/ocudu_lpp_lib.dir/reference_location.cpp.o
+[ 69%] Building CXX object lib/asn1/rrc_nr/CMakeFiles/rrc_nr_asn1.dir/ul_dcch_msg_ies.cpp.o
+[ 69%] Linking CXX static library libocudu_lpp_lib.a
+[ 69%] Built target ocudu_lpp_lib
+[ 69%] Building CXX object lib/e2/CMakeFiles/ocudu_e2.dir/procedures/ric_reconnection_routine.cpp.o
+[ 69%] Building CXX object lib/e2/CMakeFiles/ocudu_e2.dir/procedures/ric_connection_loss_routine.cpp.o
+[ 69%] Building CXX object lib/e2/CMakeFiles/ocudu_e2.dir/procedures/ric_connection_setup_routine.cpp.o
+[ 69%] Building CXX object lib/e2/CMakeFiles/ocudu_e2.dir/procedures/e2ap_removal_procedure.cpp.o
+[ 76%] Building CXX object lib/e2/CMakeFiles/ocudu_e2.dir/procedures/ric_connection_removal_routine.cpp.o
+[ 76%] Building CXX object lib/e2/CMakeFiles/ocudu_e2.dir/procedures/e2ap_subscription_setup_procedure.cpp.o
+[ 76%] Building CXX object lib/e2/CMakeFiles/ocudu_e2.dir/procedures/e2ap_subscription_delete_procedure.cpp.o
+[ 76%] Building CXX object lib/e2/CMakeFiles/ocudu_e2.dir/procedures/e2ap_indication_procedure.cpp.o
+[ 76%] Building CXX object lib/e2/CMakeFiles/ocudu_e2.dir/procedures/e2ap_ric_control_procedure.cpp.o
+[ 76%] Building CXX object lib/asn1/rrc_nr/CMakeFiles/rrc_nr_asn1.dir/pcch_msg_ies.cpp.o
+[ 76%] Building CXX object lib/e2/CMakeFiles/ocudu_e2.dir/procedures/e2ap_connection_update_procedure.cpp.o
+[ 76%] Building CXX object lib/asn1/rrc_nr/CMakeFiles/rrc_nr_asn1.dir/dl_dcch_msg.cpp.o
+[ 76%] Building CXX object lib/asn1/rrc_nr/CMakeFiles/rrc_nr_asn1.dir/ul_dcch_msg.cpp.o
+[ 76%] Building CXX object lib/e2/CMakeFiles/ocudu_e2.dir/common/e2_connection_handler.cpp.o
+[ 76%] Building CXX object lib/asn1/rrc_nr/CMakeFiles/rrc_nr_asn1.dir/nr_ue_variables.cpp.o
+[ 76%] Building CXX object lib/e2/CMakeFiles/ocudu_e2.dir/common/e2_node_component_config_collector.cpp.o
+[ 76%] Building CXX object lib/e2/CMakeFiles/ocudu_e2.dir/common/e2_cu_cp_factory.cpp.o
+[ 76%] Building CXX object lib/e2/CMakeFiles/ocudu_e2.dir/common/e2_cu_up_factory.cpp.o
+[ 76%] Building CXX object lib/asn1/rrc_nr/CMakeFiles/rrc_nr_asn1.dir/pc5_rrc_definitions.cpp.o
+[ 76%] Building CXX object lib/asn1/rrc_nr/CMakeFiles/rrc_nr_asn1.dir/nr_sidelink_preconf.cpp.o
+[ 76%] Building CXX object lib/asn1/rrc_nr/CMakeFiles/rrc_nr_asn1.dir/cell_group_config.cpp.o
+[ 84%] Linking CXX static library libf1ap_asn1.a
+[ 84%] Built target f1ap_asn1
+[ 84%] Building CXX object lib/e2/CMakeFiles/ocudu_e2.dir/common/e2_du_factory.cpp.o
+[ 84%] Building CXX object lib/asn1/rrc_nr/CMakeFiles/rrc_nr_asn1.dir/bcch_bch_msg.cpp.o
+[ 84%] Building CXX object lib/f1ap/CMakeFiles/ocudu_f1ap_common.dir/f1ap_common_messages.cpp.o
+[ 84%] Building CXX object lib/e2/CMakeFiles/ocudu_e2.dir/common/e2_impl.cpp.o
+[ 84%] Building CXX object lib/asn1/rrc_nr/CMakeFiles/rrc_nr_asn1.dir/bcch_dl_sch_msg.cpp.o
+[ 84%] Building CXX object lib/asn1/rrc_nr/CMakeFiles/rrc_nr_asn1.dir/pcch_msg.cpp.o
+[ 84%] Building CXX object lib/f1ap/CMakeFiles/ocudu_f1ap_common.dir/asn1_helpers.cpp.o
+[ 84%] Building CXX object lib/asn1/rrc_nr/CMakeFiles/rrc_nr_asn1.dir/ul_ccch_msg.cpp.o
+[ 84%] Building CXX object lib/f1ap/CMakeFiles/ocudu_f1ap_common.dir/f1ap_asn1_packer.cpp.o
+[ 84%] Building CXX object lib/asn1/rrc_nr/CMakeFiles/rrc_nr_asn1.dir/ul_ccch1_msg.cpp.o
+[ 84%] Building CXX object lib/asn1/rrc_nr/CMakeFiles/rrc_nr_asn1.dir/dl_ccch_msg.cpp.o
+[ 84%] Building CXX object lib/e2/CMakeFiles/ocudu_e2.dir/common/e2_entity.cpp.o
+[ 84%] Building CXX object lib/f1ap/CMakeFiles/ocudu_f1ap_common.dir/log_helpers.cpp.o
+[ 84%] Building CXX object lib/e2/CMakeFiles/ocudu_e2.dir/common/e2_subscription_manager_impl.cpp.o
+[ 84%] Building CXX object lib/e2/CMakeFiles/ocudu_e2.dir/common/e2_du_metrics_connector.cpp.o
+[ 84%] Building CXX object lib/e2/CMakeFiles/ocudu_e2.dir/common/e2_cu_metrics_connector.cpp.o
+[ 84%] Building CXX object lib/asn1/rrc_nr/CMakeFiles/rrc_nr_asn1.dir/rrc_nr.cpp.o
+[ 84%] Building CXX object lib/e2/CMakeFiles/ocudu_e2.dir/e2sm/e2sm_ccc/e2sm_ccc_asn1_packer.cpp.o
+[ 84%] Building CXX object lib/e2/CMakeFiles/ocudu_e2.dir/e2sm/e2sm_ccc/e2sm_ccc_impl.cpp.o
+[ 84%] Linking CXX static library libocudu_f1ap_common.a
+[ 84%] Built target ocudu_f1ap_common
+[ 84%] Building CXX object lib/e2/CMakeFiles/ocudu_e2.dir/e2sm/e2sm_ccc/e2sm_ccc_control_service_impl.cpp.o
+[ 84%] Building CXX object lib/e2/CMakeFiles/ocudu_e2.dir/e2sm/e2sm_ccc/e2sm_ccc_control_action_du_executor.cpp.o
+[ 84%] Building CXX object lib/e2/CMakeFiles/ocudu_e2.dir/e2sm/e2sm_kpm/e2sm_kpm_impl.cpp.o
+[ 84%] Building CXX object lib/e2/CMakeFiles/ocudu_e2.dir/e2sm/e2sm_kpm/e2sm_kpm_asn1_packer.cpp.o
+[ 84%] Building CXX object lib/e2/CMakeFiles/ocudu_e2.dir/e2sm/e2sm_rc/e2sm_rc_asn1_packer.cpp.o
+[ 84%] Building CXX object lib/e2/CMakeFiles/ocudu_e2.dir/e2sm/e2sm_rc/e2sm_rc_impl.cpp.o
+[ 84%] Building CXX object lib/e2/CMakeFiles/ocudu_e2.dir/e2sm/e2sm_rc/e2sm_rc_control_service_impl.cpp.o
+[ 84%] Building CXX object lib/e2/CMakeFiles/ocudu_e2.dir/e2sm/e2sm_rc/e2sm_rc_control_action_du_executor.cpp.o
+[ 84%] Building CXX object lib/e2/CMakeFiles/ocudu_e2.dir/e2sm/e2sm_rc/e2sm_rc_control_action_cu_executor.cpp.o
+[ 92%] Building CXX object lib/e2/CMakeFiles/ocudu_e2.dir/e2sm/e2sm_manager.cpp.o
+[ 92%] Building CXX object lib/e2/CMakeFiles/ocudu_e2.dir/e2sm/e2sm_kpm/e2sm_kpm_utils.cpp.o
+[ 92%] Building CXX object lib/e2/CMakeFiles/ocudu_e2.dir/e2sm/e2sm_kpm/e2sm_kpm_report_service_impl.cpp.o
+[ 92%] Building CXX object lib/e2/CMakeFiles/ocudu_e2.dir/e2sm/e2sm_kpm/e2sm_kpm_du_meas_provider_impl.cpp.o
+[ 92%] Building CXX object lib/e2/CMakeFiles/ocudu_e2.dir/e2sm/e2sm_kpm/e2sm_kpm_cu_meas_provider_impl.cpp.o
+[ 92%] Building CXX object lib/e2/CMakeFiles/ocudu_e2.dir/gateways/e2_network_client_factory.cpp.o
+[ 92%] Linking CXX static library librrc_nr_asn1.a
+[ 92%] Built target rrc_nr_asn1
+[ 92%] Building CXX object lib/rrc/CMakeFiles/ocudu_rrc.dir/rrc_du_factory.cpp.o
+[ 92%] Building CXX object lib/rrc/CMakeFiles/ocudu_rrc.dir/rrc_du_impl.cpp.o
+[ 92%] Building CXX object lib/rrc/CMakeFiles/ocudu_rrc.dir/metrics/rrc_du_metrics_aggregator.cpp.o
+[ 92%] Building CXX object lib/rrc/CMakeFiles/ocudu_rrc.dir/ue/rrc_asn1_helpers.cpp.o
+[ 92%] Building CXX object lib/rrc/CMakeFiles/ocudu_rrc.dir/ue/rrc_asn1_converters.cpp.o
+[ 92%] Building CXX object lib/rrc/CMakeFiles/ocudu_rrc.dir/ue/rrc_measurement_types_asn1_converters.cpp.o
+[ 92%] Building CXX object lib/rrc/CMakeFiles/ocudu_rrc.dir/ue/rrc_ue_impl.cpp.o
+[ 92%] Linking CXX static library libocudu_e2.a
+[ 92%] Built target ocudu_e2
+[ 92%] Building CXX object lib/rrc/CMakeFiles/ocudu_rrc.dir/ue/rrc_ue_context.cpp.o
+[ 92%] Building CXX object lib/rrc/CMakeFiles/ocudu_rrc.dir/ue/rrc_ue_message_handlers.cpp.o
+[ 92%] Building CXX object tests/unittests/e2/CMakeFiles/e2_test_helpers.dir/common/e2ap_asn1_packer.cpp.o
+[ 92%] Building CXX object lib/rrc/CMakeFiles/ocudu_rrc.dir/ue/rrc_ue_message_senders.cpp.o
+[ 92%] Linking CXX static library libe2_test_helpers.a
+[ 92%] Built target e2_test_helpers
+[ 92%] Building CXX object lib/rrc/CMakeFiles/ocudu_rrc.dir/ue/rrc_ue_helpers.cpp.o
+[ 92%] Building CXX object lib/rrc/CMakeFiles/ocudu_rrc.dir/ue/rrc_ue_security_helpers.cpp.o
+[ 92%] Building CXX object lib/rrc/CMakeFiles/ocudu_rrc.dir/ue/procedures/rrc_setup_procedure.cpp.o
+[ 92%] Building CXX object lib/rrc/CMakeFiles/ocudu_rrc.dir/ue/procedures/rrc_reconfiguration_procedure.cpp.o
+[ 92%] Building CXX object lib/rrc/CMakeFiles/ocudu_rrc.dir/ue/procedures/rrc_ue_capability_transfer_procedure.cpp.o
+[ 92%] Building CXX object lib/rrc/CMakeFiles/ocudu_rrc.dir/ue/procedures/rrc_ue_information_procedure.cpp.o
+[100%] Building CXX object lib/rrc/CMakeFiles/ocudu_rrc.dir/ue/procedures/rrc_reestablishment_procedure.cpp.o
+[100%] Building CXX object lib/rrc/CMakeFiles/ocudu_rrc.dir/ue/procedures/rrc_resume_procedure.cpp.o
+[100%] Linking CXX static library libocudu_rrc.a
+[100%] Built target ocudu_rrc
+[100%] Building CXX object tests/test_doubles/rrc/CMakeFiles/rrc_test_doubles.dir/Unity/unity_0_cxx.cxx.o
+[100%] Linking CXX static library librrc_test_doubles.a
+[100%] Built target rrc_test_doubles
+[100%] Building CXX object tests/test_doubles/f1ap/CMakeFiles/f1ap_test_doubles.dir/Unity/unity_0_cxx.cxx.o
+[100%] Linking CXX static library libf1ap_test_doubles.a
+[100%] Built target f1ap_test_doubles
+[100%] Building CXX object tests/unittests/e2/CMakeFiles/e2sm_kpm_test.dir/e2sm_kpm_test.cpp.o
+[100%] Linking CXX executable e2sm_kpm_test
+[100%] Built target e2sm_kpm_test
+Consolidate compiler generated dependencies of target fmt
+Consolidate compiler generated dependencies of target ocudu_pcap
+[  0%] Built target fmt
+[  0%] Built target ocudu_pcap
+Consolidate compiler generated dependencies of target ocudulog
+[ 25%] Built target ocudulog
+Consolidate compiler generated dependencies of target ocuduvec
+Consolidate compiler generated dependencies of target ocudu_support
+[ 25%] Built target ocuduvec
+Consolidate compiler generated dependencies of target ocudu_support_math
+[ 50%] Built target ocudu_support
+[ 50%] Built target ocudu_support_math
+Consolidate compiler generated dependencies of target asn1_utils
+Consolidate compiler generated dependencies of target ocudu_gateway
+[ 50%] Built target asn1_utils
+[ 50%] Built target ocudu_gateway
+Consolidate compiler generated dependencies of target e2ap_asn1
+[ 50%] Built target e2ap_asn1
+Consolidate compiler generated dependencies of target ocudu_e2
+[100%] Built target ocudu_e2
+Consolidate compiler generated dependencies of target e2_test_helpers
+[100%] Built target e2_test_helpers
+[100%] Building CXX object tests/unittests/e2/CMakeFiles/e2sm_kpm_meas_provider_metrics_test.dir/e2sm_kpm_meas_provider_metrics_test.cpp.o
+[100%] Linking CXX executable e2sm_kpm_meas_provider_metrics_test
+[100%] Built target e2sm_kpm_meas_provider_metrics_test
+
+real	6m40.918s
+user	35m38.301s
+sys	3m39.875s
+EXIT=0

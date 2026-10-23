@@ -1,0 +1,87 @@
+parsed: 378 KPM samples, 2530 ping samples
+KPM  log spans 20:25:06 .. 20:33:37 UTC
+ping log spans 20:25:21 .. 20:33:50 UTC
+
+baseline ≈ 26 ms
+LOAD WINDOW: 20:30:31 .. 20:32:33 UTC  (122 s)
+
+=== KPM SAMPLES INSIDE THE LOAD WINDOW ===
+  samples in window : 57
+  zero-valued       : 57  (100.0%)
+  non-zero          : 0
+
+=== ALL DISTINCT NON-ZERO VALUES IN THE WHOLE LOG ===
+
+=== BEFORE THE LOAD (idle) ===
+  samples 272, zero-valued 272 (100.0%)
+  (zeros here are expected: no downlink traffic)
+
+=== EVERY KPM SAMPLE IN THE LOAD WINDOW ===
+    20:30:32  0.0
+    20:30:34  0.0
+    20:30:37  0.0
+    20:30:39  0.0
+    20:30:41  0.0
+    20:30:43  0.0
+    20:30:46  0.0
+    20:30:49  0.0
+    20:30:51  0.0
+    20:30:53  0.0
+    20:30:55  0.0
+    20:30:57  0.0
+    20:31:00  0.0
+    20:31:02  0.0
+    20:31:04  0.0
+    20:31:06  0.0
+    20:31:08  0.0
+    20:31:10  0.0
+    20:31:12  0.0
+    20:31:14  0.0
+    20:31:16  0.0
+    20:31:18  0.0
+    20:31:20  0.0
+    20:31:22  0.0
+    20:31:24  0.0
+    20:31:26  0.0
+    20:31:29  0.0
+    20:31:31  0.0
+    20:31:33  0.0
+    20:31:35  0.0
+    20:31:37  0.0
+    20:31:40  0.0
+    20:31:42  0.0
+    20:31:44  0.0
+    20:31:46  0.0
+    20:31:48  0.0
+    20:31:50  0.0
+    20:31:52  0.0
+    20:31:54  0.0
+    20:31:56  0.0
+    20:31:59  0.0
+    20:32:01  0.0
+    20:32:03  0.0
+    20:32:05  0.0
+    20:32:07  0.0
+    20:32:09  0.0
+    20:32:11  0.0
+    20:32:14  0.0
+    20:32:16  0.0
+    20:32:18  0.0
+    20:32:20  0.0
+    20:32:22  0.0
+    20:32:24  0.0
+    20:32:27  0.0
+    20:32:29  0.0
+    20:32:31  0.0
+    20:32:32  0.0
+
+=== VERDICT ===
+  Zeros DOMINATE the load window. The metric was not steady;
+  it was mostly reporting nothing while traffic flowed.
+  The chart must show them. This strengthens the finding.
+Traceback (most recent call last):
+  File "/home/payam/uc06_refigure2.py", line 218, in <module>
+    main()
+  File "/home/payam/uc06_refigure2.py", line 211, in main
+    f"{min(nz):.0f}–{max(nz):.0f}. RTT p95 {p95:.0f} ms vs {baseline:.0f} ms baseline. "
+ValueError: min() arg is an empty sequence

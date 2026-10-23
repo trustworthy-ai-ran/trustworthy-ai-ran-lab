@@ -1,0 +1,10 @@
+parsed: 267 KPM samples, 1778 ping samples
+KPM  log spans 20:39:17 .. 20:45:37 UTC
+ping log spans 20:39:36 .. 20:45:33 UTC
+
+baseline ≈ 26 ms
+LOAD WINDOW: 20:39:48 .. 20:39:52 UTC  (3 s)
+
+=== KPM SAMPLES INSIDE THE LOAD WINDOW ===
+  samples in window : 0
+  no KPM samples inside the load window — check log alignment

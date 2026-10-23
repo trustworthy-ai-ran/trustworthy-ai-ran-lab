@@ -1,0 +1,171 @@
+=== BEFORE: ~/ocudu-prefix @ f396a74e7fbf621d94a9e624d24ed6c312ff40a3, 2026-09-23T10:21:07-07:00 ===
+ M tests/unittests/e2/e2sm_kpm_meas_provider_metrics_test.cpp
+ M tests/unittests/e2/e2sm_kpm_test.cpp
+?? build/
+
+===== e2sm_kpm_test =====
+[==========] Running 8 tests from 3 test suites.
+[----------] Global test environment set-up.
+[----------] 2 tests from e2sm_kpm_report_service_style2_test
+[ RUN      ] e2sm_kpm_report_service_style2_test.readiness_and_record_order_are_independent_of_metric_order
+/home/payam/ocudu-prefix/tests/unittests/e2/e2sm_kpm_test.cpp:203: Failure
+Value of: report_service.is_ind_msg_ready()
+  Actual: false
+Expected: true
+Google Test trace:
+/home/payam/ocudu-prefix/tests/unittests/e2/e2sm_kpm_test.cpp:199: unavailable_metric=no-value valid_metric_first=true
+[  FAILED  ] e2sm_kpm_report_service_style2_test.readiness_and_record_order_are_independent_of_metric_order (0 ms)
+[ RUN      ] e2sm_kpm_report_service_style2_test.indication_is_not_ready_when_all_metrics_are_unavailable
+[       OK ] e2sm_kpm_report_service_style2_test.indication_is_not_ready_when_all_metrics_are_unavailable (0 ms)
+[----------] 2 tests from e2sm_kpm_report_service_style2_test (0 ms total)
+
+[----------] 1 test from e2sm_kpm_tests/e2_entity_test_with_pcap
+[ RUN      ] e2sm_kpm_tests/e2_entity_test_with_pcap.e2sm_kpm_generates_ran_func_desc/0
+2026-09-23T17:21:07.124305 [TEST    ] [I] Launch e2 setup request procedure with task worker...
+2026-09-23T17:21:07.124309 [TEST    ] [I] "RIC Connection Setup Routine" started.
+2026-09-23T17:21:07.124336 [TEST    ] [I] Generate RAN function definition for OID: 1.3.6.1.4.1.53148.1.2.2.2
+2026-09-23T17:21:07.124399 [TEST    ] [D] E2 Setup: node component config [0] interface_type=3 req_bytes=176 resp_bytes=48
+2026-09-23T17:21:07.124400 [TEST    ] [I] Added RAN function OID 1.3.6.1.4.1.53148.1.2.2.2 to candidate list under RAN Function ID 2
+2026-09-23T17:21:07.124427 [TEST    ] [I] Injecting E2SetupResponse
+2026-09-23T17:21:07.124429 [TEST    ] [I] E2AP msg, "successfulOutcome.E2setupResponse", transaction id=0
+2026-09-23T17:21:07.124431 [TEST    ] [I] E2 Setup procedure successful.
+2026-09-23T17:21:07.124435 [TEST    ] [I] Added supported RAN function with id 2 and OID 1.3.6.1.4.1.53148.1.2.2.2
+2026-09-23T17:21:07.124435 [TEST    ] [I] "RIC Connection Setup Routine" finished successfully.
+2026-09-23T17:21:07.124667 [E2AP    ] [W] E2 TNL association was not properly shutdown before E2AP shutdown. Forcing it...
+[       OK ] e2sm_kpm_tests/e2_entity_test_with_pcap.e2sm_kpm_generates_ran_func_desc/0 (19 ms)
+[----------] 1 test from e2sm_kpm_tests/e2_entity_test_with_pcap (19 ms total)
+
+[----------] 5 tests from e2sm_kpm_tests/e2sm_kpm_indication
+[ RUN      ] e2sm_kpm_tests/e2sm_kpm_indication.e2sm_kpm_generates_ric_indication_style1/0
+2026-09-23T17:21:07.125405 [TEST    ] [I] Admitting action 0 (type 0)
+2026-09-23T17:21:07.125411 [TEST    ] [I] Admitting action 0 (type 0)
+2026-09-23T17:21:07.125413 [TEST    ] [D] E2 Agent admitted actions [with labels]: DRB.RlcSduDelayDl [NO_LABEL], DRB.UEThpUl [NO_LABEL], 
+[       OK ] e2sm_kpm_tests/e2sm_kpm_indication.e2sm_kpm_generates_ric_indication_style1/0 (0 ms)
+[ RUN      ] e2sm_kpm_tests/e2sm_kpm_indication.e2sm_kpm_generates_ric_indication_style2/0
+2026-09-23T17:21:07.125821 [TEST    ] [I] Admitting action 0 (type 0)
+2026-09-23T17:21:07.125824 [TEST    ] [I] Admitting action 0 (type 0)
+2026-09-23T17:21:07.125826 [TEST    ] [D] E2 Agent admitted actions [with labels]: DRB.UEThpDl [NO_LABEL], 
+[       OK ] e2sm_kpm_tests/e2sm_kpm_indication.e2sm_kpm_generates_ric_indication_style2/0 (0 ms)
+[ RUN      ] e2sm_kpm_tests/e2sm_kpm_indication.e2sm_kpm_generates_ric_indication_style3/0
+2026-09-23T17:21:07.126169 [TEST    ] [I] Admitting action 0 (type 0)
+2026-09-23T17:21:07.126170 [TEST    ] [D] Matching UE test condition [meas_label] not supported -> do not admit action
+2026-09-23T17:21:07.126174 [TEST    ] [I] Admitting action 0 (type 0)
+[       OK ] e2sm_kpm_tests/e2sm_kpm_indication.e2sm_kpm_generates_ric_indication_style3/0 (0 ms)
+[ RUN      ] e2sm_kpm_tests/e2sm_kpm_indication.e2sm_kpm_generates_ric_indication_style4/0
+2026-09-23T17:21:07.126566 [TEST    ] [I] Admitting action 0 (type 0)
+2026-09-23T17:21:07.126571 [TEST    ] [I] Admitting action 0 (type 0)
+2026-09-23T17:21:07.126572 [TEST    ] [D] E2 Agent admitted actions [with labels]: DRB.UEThpDl [NO_LABEL], 
+[       OK ] e2sm_kpm_tests/e2sm_kpm_indication.e2sm_kpm_generates_ric_indication_style4/0 (0 ms)
+[ RUN      ] e2sm_kpm_tests/e2sm_kpm_indication.e2sm_kpm_generates_ric_indication_style5/0
+2026-09-23T17:21:07.126907 [TEST    ] [I] Admitting action 0 (type 0)
+2026-09-23T17:21:07.126912 [TEST    ] [I] Admitting action 0 (type 0)
+2026-09-23T17:21:07.126913 [TEST    ] [D] E2 Agent admitted actions [with labels]: DRB.UEThpDl [NO_LABEL], 
+[       OK ] e2sm_kpm_tests/e2sm_kpm_indication.e2sm_kpm_generates_ric_indication_style5/0 (0 ms)
+[----------] 5 tests from e2sm_kpm_tests/e2sm_kpm_indication (2 ms total)
+
+[----------] Global test environment tear-down
+[==========] 8 tests from 3 test suites ran. (21 ms total)
+[  PASSED  ] 7 tests.
+[  FAILED  ] 1 test, listed below:
+[  FAILED  ] e2sm_kpm_report_service_style2_test.readiness_and_record_order_are_independent_of_metric_order
+
+ 1 FAILED TEST
+EXIT(e2sm_kpm_test)=1
+
+===== e2sm_kpm_meas_provider_metrics_test =====
+Running main() from ./googletest/src/gtest_main.cc
+[==========] Running 13 tests from 2 test suites.
+[----------] Global test environment set-up.
+[----------] 10 tests from e2sm_kpm_meas_provider_metrics_test
+[ RUN      ] e2sm_kpm_meas_provider_metrics_test.e2sm_kpm_supported_metrics_are_supported
+[       OK ] e2sm_kpm_meas_provider_metrics_test.e2sm_kpm_supported_metrics_are_supported (15 ms)
+[ RUN      ] e2sm_kpm_meas_provider_metrics_test.e2sm_kpm_return_e2_level_metric_with_no_measurements
+[       OK ] e2sm_kpm_meas_provider_metrics_test.e2sm_kpm_return_e2_level_metric_with_no_measurements (0 ms)
+[ RUN      ] e2sm_kpm_meas_provider_metrics_test.e2sm_kpm_return_e2_level_metric_with_with_measurements
+2026-09-23T17:21:07.153105 [E2SM-KPM] [D] Received RLC metrics: ue=0 DRB1.
+[       OK ] e2sm_kpm_meas_provider_metrics_test.e2sm_kpm_return_e2_level_metric_with_with_measurements (0 ms)
+[ RUN      ] e2sm_kpm_meas_provider_metrics_test.e2sm_kpm_prb_metrics_with_zero_slots_do_not_crash
+[       OK ] e2sm_kpm_meas_provider_metrics_test.e2sm_kpm_prb_metrics_with_zero_slots_do_not_crash (0 ms)
+[ RUN      ] e2sm_kpm_meas_provider_metrics_test.e2sm_kpm_prb_perc_metrics_with_zero_cell_prbs_return_zero
+[       OK ] e2sm_kpm_meas_provider_metrics_test.e2sm_kpm_prb_perc_metrics_with_zero_cell_prbs_return_zero (0 ms)
+[ RUN      ] e2sm_kpm_meas_provider_metrics_test.e2sm_kpm_prb_avail_metrics_without_ues_return_cell_prbs
+[       OK ] e2sm_kpm_meas_provider_metrics_test.e2sm_kpm_prb_avail_metrics_without_ues_return_cell_prbs (0 ms)
+[ RUN      ] e2sm_kpm_meas_provider_metrics_test.e2sm_kpm_prb_avail_metrics_do_not_underflow
+[       OK ] e2sm_kpm_meas_provider_metrics_test.e2sm_kpm_prb_avail_metrics_do_not_underflow (0 ms)
+[ RUN      ] e2sm_kpm_meas_provider_metrics_test.e2sm_kpm_drb_latency_with_zero_sdus_returns_no_value
+2026-09-23T17:21:07.154311 [E2SM-KPM] [D] Received RLC metrics: ue=0 DRB1.
+[       OK ] e2sm_kpm_meas_provider_metrics_test.e2sm_kpm_drb_latency_with_zero_sdus_returns_no_value (0 ms)
+[ RUN      ] e2sm_kpm_meas_provider_metrics_test.e2sm_kpm_drb_throughput_preserves_fractional_values
+/home/payam/ocudu-prefix/tests/unittests/e2/e2sm_kpm_meas_provider_metrics_test.cpp:576: Failure
+Expected equality of these values:
+  meas_records[0].real().value
+    Which is: 0
+  0.4F
+    Which is: 0.40000001
+/home/payam/ocudu-prefix/tests/unittests/e2/e2sm_kpm_meas_provider_metrics_test.cpp:576: Failure
+Expected equality of these values:
+  meas_records[0].real().value
+    Which is: 0
+  0.4F
+    Which is: 0.40000001
+/home/payam/ocudu-prefix/tests/unittests/e2/e2sm_kpm_meas_provider_metrics_test.cpp:576: Failure
+Expected equality of these values:
+  meas_records[0].real().value
+    Which is: 0
+  0.4F
+    Which is: 0.40000001
+/home/payam/ocudu-prefix/tests/unittests/e2/e2sm_kpm_meas_provider_metrics_test.cpp:576: Failure
+Expected equality of these values:
+  meas_records[0].real().value
+    Which is: 0
+  0.4F
+    Which is: 0.40000001
+2026-09-23T17:21:07.154603 [E2SM-KPM] [D] Received RLC metrics: ue=0 DRB1.
+[  FAILED  ] e2sm_kpm_meas_provider_metrics_test.e2sm_kpm_drb_throughput_preserves_fractional_values (0 ms)
+[ RUN      ] e2sm_kpm_meas_provider_metrics_test.e2sm_kpm_drb_latency_does_not_overflow_signed_integer
+/home/payam/ocudu-prefix/tests/unittests/e2/e2sm_kpm_meas_provider_metrics_test.cpp:614: Failure
+Expected equality of these values:
+  meas_records[0].real().value
+    Which is: -4.3000001907348633
+  10.0
+    Which is: 10
+/home/payam/ocudu-prefix/tests/unittests/e2/e2sm_kpm_meas_provider_metrics_test.cpp:614: Failure
+Expected equality of these values:
+  meas_records[0].real().value
+    Which is: -4.3000001907348633
+  10.0
+    Which is: 10
+/home/payam/ocudu-prefix/tests/unittests/e2/e2sm_kpm_meas_provider_metrics_test.cpp:614: Failure
+Expected equality of these values:
+  meas_records[0].real().value
+    Which is: -4.3165574073791504
+  10.0
+    Which is: 10
+/home/payam/ocudu-prefix/tests/unittests/e2/e2sm_kpm_meas_provider_metrics_test.cpp:614: Failure
+Expected equality of these values:
+  meas_records[0].real().value
+    Which is: -4.3165574073791504
+  10.0
+    Which is: 10
+2026-09-23T17:21:07.154950 [E2SM-KPM] [D] Received RLC metrics: ue=0 DRB1.
+[  FAILED  ] e2sm_kpm_meas_provider_metrics_test.e2sm_kpm_drb_latency_does_not_overflow_signed_integer (0 ms)
+[----------] 10 tests from e2sm_kpm_meas_provider_metrics_test (18 ms total)
+
+[----------] 3 tests from e2sm_kpm_cu_cp_meas_provider_metrics_test
+[ RUN      ] e2sm_kpm_cu_cp_meas_provider_metrics_test.e2sm_kpm_cu_cp_supported_metrics_are_present
+[       OK ] e2sm_kpm_cu_cp_meas_provider_metrics_test.e2sm_kpm_cu_cp_supported_metrics_are_present (0 ms)
+[ RUN      ] e2sm_kpm_cu_cp_meas_provider_metrics_test.e2sm_kpm_cu_cp_returns_zero_without_metrics_report
+[       OK ] e2sm_kpm_cu_cp_meas_provider_metrics_test.e2sm_kpm_cu_cp_returns_zero_without_metrics_report (0 ms)
+[ RUN      ] e2sm_kpm_cu_cp_meas_provider_metrics_test.e2sm_kpm_cu_cp_returns_expected_rrc_metrics
+[       OK ] e2sm_kpm_cu_cp_meas_provider_metrics_test.e2sm_kpm_cu_cp_returns_expected_rrc_metrics (0 ms)
+[----------] 3 tests from e2sm_kpm_cu_cp_meas_provider_metrics_test (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 13 tests from 2 test suites ran. (18 ms total)
+[  PASSED  ] 11 tests.
+[  FAILED  ] 2 tests, listed below:
+[  FAILED  ] e2sm_kpm_meas_provider_metrics_test.e2sm_kpm_drb_throughput_preserves_fractional_values
+[  FAILED  ] e2sm_kpm_meas_provider_metrics_test.e2sm_kpm_drb_latency_does_not_overflow_signed_integer
+
+ 2 FAILED TESTS
+EXIT(e2sm_kpm_meas_provider_metrics_test)=1
