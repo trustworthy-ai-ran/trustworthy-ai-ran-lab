@@ -1,6 +1,6 @@
 # Open questions
 
-Observations recorded during the UC-06 and EXP-02B sessions that are **not
+Observations recorded during the UC-06, EXP-02B and UC-06R sessions that are **not
 explained**. They are published because they are reproducible enough to
 report and because omitting them would misrepresent what the lab saw.
 
@@ -143,6 +143,44 @@ readiness check.
 
 ---
 
+## OQ-5 — `DRB.RlcSduDelayDl` requested alone produces no Indications
+
+**Observed, 24 September 2026 (UC-06R, runs B1 and B2).** Subscribed alone at
+Report Style 2, the metric produced **zero Indications for the whole run**, idle
+and under load, in 2 of 2 runs (~15 and ~21 minutes subscribed). The subscription
+was accepted, the xApp stayed alive, the gNB did not restart, and no error was
+logged.
+
+**Why it is open.** The last-metric readiness check (EXP-02B) withholds an
+Indication whenever the delay record has no value. But the control run C1
+(`DRB.RlcSduDelayDl, DRB.UEThpDl`, same gNB instance) received delay values
+(14.5–25.9 ms) in 20 idle-period reports, which suggests that at least some idle
+periods should have produced reports in B1 and B2 too. In July the same
+subscription did deliver Indications, with impossible values (OQ-2), and in other
+July runs returned `no_value`; what separates these regimes is not known. Whether
+the fixed build (OCUDU 26.10) behaves differently has not been tested end to end.
+
+---
+
+## Updates, October 2026
+
+- **OQ-1** — reproduced in UC-06R. In A1 `DRB.UEThpDl` reported 0.0 in all 378
+  Indications (56 under load) while 22.4 Mb/s reached the UE, on the same build and
+  gNB instance as A2, which reported non-zero values. In C1 it reported 0.0 in every
+  report after the first 118 s. The old code truncated fractional throughput (EXP-02C:
+  0 where 0.4 was expected), fixed upstream in `1a1d1feb9b`; whether that explains
+  the zero-lock is **not established**. Still open.
+- **OQ-2** — candidate cause confirmed at code level. The merge request's test
+  `e2sm_kpm_drb_latency_does_not_overflow_signed_integer` returned −4.3 where 10 was
+  expected on the old code and passes after `1a1d1feb9b` (OCUDU 26.10). Not yet
+  re-checked end to end.
+- **OQ-3** — consistent observation in UC-06R. Where `DRB.UEThpDl` worked, it read
+  ≈2.2× the rate delivered to the UE if read as kbit/s (A2: 51,778 vs 23.3 Mb/s;
+  A3: 39,710 vs 18.2 Mb/s). In A2 the value 59,022 recurs in 9 of 56 load-window
+  reports and is never exceeded. Still open.
+
+---
+
 ## What would close these
 
 | ID | Test | Effort |
@@ -151,3 +189,4 @@ readiness check.
 | OQ-2 | Same rebuild, log `tot_sdu_latency_us` before and after accumulation; probe the metric alone immediately before and after a dual-metric run to bracket its regime | half a day |
 | OQ-3 | Run at 10 Mb/s (low segmentation) vs 30 Mb/s and compare `brate` against interface counters | one hour |
 | OQ-4 | Capture gNB E2AP logs in the window of a nonexistent-metric run | ten minutes |
+| OQ-5 | Repeat B1/B2 on OCUDU 26.10; log readiness decisions per collection period on the old build | half a day |

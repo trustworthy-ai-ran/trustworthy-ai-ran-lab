@@ -63,13 +63,50 @@ collected successfully.
 Pre-registration, locked analysis rule, mechanism and threats to validity:
 [`exp-02b/RESULTS.md`](exp-02b/RESULTS.md)
 
+**Status (October 2026): fixed upstream.** Reported to the OCUDU project as issue
+#684 and fixed by the maintainers in merge request !1521: readiness is now
+evaluated across all requested metrics, and a missing measurement is sent as
+`noValue` so metric order is preserved. Verified independently in
+[EXP-02C](#exp-02c--independent-verification-of-the-upstream-fix); shipped in
+**OCUDU 26.10**.
+
+## UC-06R — replication with three subscription arms (September 2026)
+
+Same lab and gNB build, re-run with a 5 Hz probe and pre-registered arms to answer
+UC-06's open question: what does the xApp receive if it also asks for delay? Under
+the same 30 Mb/s load, median RTT went from **33–36 ms to 2.0–2.9 s (56–81×) in
+6 of 6 runs**, and no KPM report showed it.
+
+| Subscription (metrics, in order) | What the xApp received | Mode |
+|---|---|---|
+| `DRB.UEThpDl` (A2, A3) | 56/56 load-window reports non-zero: a busy, healthy-looking cell | blind |
+| `DRB.UEThpDl` (A1, same build) | 0.0 in all 378 reports while 22.4 Mb/s reached the UE | stuck |
+| `DRB.RlcSduDelayDl` (B1, B2) | subscription accepted, zero Indications in the whole run | silent |
+| `DRB.RlcSduDelayDl, DRB.UEThpDl` (C1) | delay 14.5–25.9 ms at idle only; under load, delay `None` and throughput 0.0 in all 42 reports | void |
+
+![UC-06R time-aligned witnesses](uc06r-replication/figures/fig_timeseries.png)
+
+Per-run statistics, raw logs, pre-registration and analysis conventions:
+[`uc06r-replication/`](uc06r-replication/README.md). Every number is recomputed from
+the raw logs by [`tools/uc06r/stats.py`](tools/uc06r/stats.py).
+
+## EXP-02C — independent verification of the upstream fix
+
+The merge request's own regression tests, run on the code before (`f396a74`) and
+after (`d0df5e24`) the fix, with predictions pre-registered: the #684 test and the
+RLC latency-overflow test fail on the old code (latency −4.3 where 10 was expected)
+and **all 21 tests pass after the fix**. Code-level verification only; an end-to-end
+run on the fixed build is the next step. Details: [`exp-02c/`](exp-02c/README.md).
+
 ## Open questions
 
-Four anomalies observed during these sessions are published with **no causal
+Five anomalies observed during these sessions are published with **no causal
 claims attached**, because they are not explained:
 [`OPEN_QUESTIONS.md`](OPEN_QUESTIONS.md)
 
 ## Reproducing the figures
+
+UC-06 (July):
 
 ```bash
 sudo apt install -y python3-matplotlib
@@ -77,13 +114,27 @@ python3 tools/make_figures.py \
     --kpm  uc06-blind-judge/data/run1_kpm.log \
     --ping uc06-blind-judge/data/run2_ping.txt \
     --outdir uc06-blind-judge/figures
+```
+
+UC-06R (September):
+
+```bash
+pip install numpy matplotlib
+python3 tools/uc06r/stats.py
+python3 tools/uc06r/make_figs.py
+python3 tools/uc06r/make_timeseries.py
+```
 
 **Repository contents.**
 
-uc06-blind-judge/
-├── METHOD.md      pre-registered protocol, testbed details, reproducibility notes
-├── figures/       five publication figures (lab, architecture, data-flow, result, proof)
-└── data/          raw timestamped probe log (Run 2) and the full KPM Indication log
+```text
+uc06-blind-judge/    UC-06 (July): protocol, figures, raw probe and KPM logs
+exp-02b/             order-dependent silence: pre-registration, results, run logs
+uc06r-replication/   UC-06R (September): pre-registration, environment, raw logs, figures, numbers.json
+exp-02c/             unit-test verification of the upstream fix (#684, MR !1521)
+uc07/                UC-07 pre-registration and pilot
+tools/               figure scripts, lab health check, UC-06R analysis (tools/uc06r/)
+OPEN_QUESTIONS.md    observations that are not explained
 ```
 
 Scope note: findings apply to the E2SM-KPM measurements exposed end-to-end by this stack (srsRAN gNB → O-RAN SC Near-RT RIC, i-release). Whether delay-class KPM measurements in newer spec revisions — where a stack implements them — close this gap is a planned follow-up ("observability atlas").
